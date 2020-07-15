@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+}
+
+h3, h4, h5, h6 {
+    font-family: sans-serif;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    /* text-align: center; */
+}
+
+.border {
+    width:calc(100% - 10px);
+    height:auto;
+    margin: 3px;
+}
+
+.segContainer {
+    box-sizing: border-box;
+    border: 1px solid black;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.dragWindow {
+	position: relative;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 0.25);
+}
+
+.coverLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#tooltip, #attrval {
+    position: absolute;
+    z-index: 100;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;
+    background: rgba(34, 34, 34, 0.6);
+    padding: 5px;
+    pointer-events: none;
+}
+
+#attrval {
+    padding: 0;
+    width: 600px;
+    height: 300px;
+    background: black;
+    border: 5px solid black;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px black;
+    pointer-events: all;
+}
+
+.card {
+    width: calc(100% - 10px);
+    height: auto;
+    margin: 5px;
+    background-color: #35353A
+}
+
+.queryButton {
+    position: relative;
+    top: -1px;
+    font-size: 6px !important;
+    font-weight: bold !important;
+}
+
+.svgContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.iconscontainer {
+    pointer-events: none;
+}
+
+/* .jqx-grid-header
+{
+    height: 48px !important;
+} */
+
+
+.red {
+    background-color: rgba(255, 0, 0, 0.7) !important;
+}
+
+.js-listbox {
+    width: auto !important;
+}
+
+.querySVG {
+    border: none;
+    background-color: #35353A
+    
+}
+
+.queryTag {
+    margin: 5px;
+    /* background-color: #35353A */
+}
+
+.dropDownButton {
+    width: 220px !important;
+}
+
+.jqx-input {
+    width: 38%;
+}
+
+.lm_popout {
+    display: none;
+}
+
+.lm_maximise {
+    display: none;
+}
+
+.cardContainer {
+    width: 100%;
+    height: 70px;
+    border: 5px solid #222222;
+    box-sizing: border-box;
+    background: #35353A;
+}
+
+.cardTitle, .cardTool, .cardView {
+    width: 100%;
+    height: calc(100% / 3);
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: sans-serif;
+    font-size: 9px;
+    color: white;
+}
+
+.cardTool, .cardView {
+    border-top: none !important;
+}
+
+.cardTitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.verticaltext {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    position: relative;
+    cursor: pointer;
+}
+
+.rightView {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0
+}
+
+.filtercolumns {
+    width: 69px !important
+}
+
+.setLayer {
+    position: relative;
+    z-index: 100;
+    left: 0;
+    top: -60px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    visibility: hidden;
+}
+
+.ui-draggable-helper {
+    pointer-events: none;
+}
+
+.setOpera {
+    height: 100%;
+    width: calc(100% / 3);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}

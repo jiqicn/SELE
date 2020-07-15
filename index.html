@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>SELE (Software Event Log Explorer)</title>
+
+        <!-- style files -->
+        <link rel="stylesheet" type="text/css" href="../SELE/Stylesheet/goldenlayout-base.css">
+        <link rel="stylesheet" type="text/css" href="../SELE/Stylesheet/goldenlayout-dark-theme.css">
+        <link rel="stylesheet" type="text/css" href="../SELE/Stylesheet/jqwidgets/styles/jqx.base.css">
+        <link rel="stylesheet" type="text/css" href="../SELE/Stylesheet/jqwidgets/styles/jqx.metrodark.css">
+        <link rel="stylesheet" type="text/css" href="../SELE/Stylesheet/style.css">
+    </head>
+    <body>
+        <div id="layoutContainer" style="width:100%;height:100%"></div>
+        <div id="tooltip" style="display:none"></div>
+        <div id="message" style="display:none"><div>Selection invalid!</div></div>
+        <div id="attrval" style="display:none">
+            <!-- display should be either none or flex for the attrval -->
+            <div id="title" style="width: 100%;height: 6.3%;font-size: 12px;background: black;display: flex">
+                <div id="text" style="width: 78px;height: 100%;background: #222222">&nbsp Attributes</div>
+                <div id="submit" style="position: relative;left: 365px;"> 
+                    <input type="button" value="Select" style="font-size: 8px !important"></input> 
+                </div>
+                <div id="close" style="position: relative;left: 370px">
+                    <input type="button" value="Close" style="font-size: 8px !important"></input>                     
+                </div>
+            </div>
+            <div id="ratio" style="width: 100%;height: 10px"></div>
+            <div id="view" style="width: 100%;height: calc(93.7% - 10px);display: flex">
+                <div id="left" style="width: 43%;height: 100%;background: #222222"></div>
+                <div id="opera" style="width: 10%;height: calc(100% + 2px);background: #222222">
+                    <div id="equal" style="padding-left: 13px">&#61</div>
+                    <div id="notequal" style="padding-left: 13px">&#8800</div>
+                </div>
+                <div id="right" style="width: 43%;height: 100%;background: #222222">
+                    <div class="rightView" id="attrs" style="display: block"></div>
+                    <div class="rightView" id="vals" style="display: none"><div></div></div>
+                </div>
+                <div id="tabs"style="width: 4%;height: 100%;background: black">
+                    <div class="verticaltext" id="attrs" style="position:relative; left:3px; top: 12px;color: orange">Attributes</div>
+                    <div class="verticaltext" id="vals" style="position:relative; left:3px; top: 60px">Values</div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- libraries -->
+        <script type="text/javascript" src="../SELE/Library/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../SELE/Library/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../SELE/Library/underscore-min.js"></script>
+        <script type="text/javascript" src="../SELE/Library/goldenlayout.min.js"></script>
+        <script type="text/javascript" src="../SELE/Library/jqwidgets/jqx-all.js"></script>               
+        <script type="text/javascript" src="../SELE/Library/filesaver.min.js"></script>               
+        <script type="text/javascript" src="../SELE/Library/d3.js"></script>  
+        <script type="text/javascript" src="../SELE/Library/svg.js"></script>
+        <script type="text/javascript" src="../SELE/Library/please.js"></script>                  
+        <script type="text/javascript" src="../SELE/Library/xmlToJSON.js"></script>                  
+
+        <!-- classes -->
+        <script type="text/javascript" src="../SELE/javascript/variables.js"></script>                              
+        <script type="text/javascript" src="../SELE/javascript/frame.js"></script>                              
+        <script type="text/javascript" src="../SELE/javascript/pattern.js"></script>                              
+        <script type="text/javascript" src="../SELE/javascript/query.js"></script>                              
+        <script type="text/javascript" src="../SELE/javascript/control.js"></script>
+        <script type="text/javascript" src="../SELE/javascript/selection.js"></script>                                                                    
+        <script type="text/javascript" src="../SELE/javascript/minimap.js"></script>                              
+        <script type="text/javascript" src="../SELE/javascript/detail.js"></script>                              
+        <script type="text/javascript" src="../SELE/javascript/attrval.js"></script>                              
+        <script type="text/javascript" src="../SELE/javascript/main.js"></script>                
+    </body>
+</html>
